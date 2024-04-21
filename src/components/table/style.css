@@ -1,0 +1,23 @@
+.table-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+p {
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgoldenrodyellow;
+}
