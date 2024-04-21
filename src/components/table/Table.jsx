@@ -1,10 +1,10 @@
 import "./style.css";
-const Table = ({ Incomes }) => {
-  const totalIncome = Incomes.reduce((accumulator, currentValue) => {
+const Table = ({ netIncomes }) => {
+  const totalIncome = netIncomes.reduce((accumulator, currentValue) => {
     return accumulator + currentValue.income;
   }, 0);
 
-  const averageIncome = totalIncome / Incomes.length;
+  const averageIncome = totalIncome / netIncomes.length;
 
   return (
     <div className="table-container">
@@ -16,7 +16,7 @@ const Table = ({ Incomes }) => {
           </tr>
         </thead>
         <tbody>
-          {Incomes.map((date, index) => (
+          {netIncomes.map((date, index) => (
             <tr key={index}>
               <td>{date.brand}</td>
               <td>${date.income}</td>

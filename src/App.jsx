@@ -1,6 +1,6 @@
 import Table from "./components/table/Table";
 
-const Incomes = [
+const netIncomes = [
   { brand: "McDonalds", income: 1291283 },
   { brand: "Burger King", income: 1927361 },
   { brand: "KFC", income: 1098463 },
@@ -9,7 +9,7 @@ const Incomes = [
 function App() {
   return (
     <>
-      <Table Incomes={Incomes}></Table>
+      <Table netIncomes={netIncomes}></Table>
     </>
   );
 }
